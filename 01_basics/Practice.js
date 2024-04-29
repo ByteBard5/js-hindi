@@ -89,3 +89,24 @@
 // console.log(stringNumber);    //33
 // console.log(typeof stringNumber);   //string
 
+// ----------------------------------------------------------------------------------------------
+// LECTURE 10
+ //PRIMITIVE TYPE 
+// let myYoutubeName = "yash.com" 
+// let anothername = myYoutubeName
+// anothername = "roboflow.com"
+// console.log(myYoutubeName);    //yash.com
+// console.log(anothername);   //roboflow.com
+
+//    NON-PRIMITIVE TYPE
+// let userOne =  {
+//     email: "userone@gmail.com",
+//     upi: "user@ypl"
+// }
+// let userTwo = userOne
+// userTwo.email = "roboflowsystem.com"
+// console.log(userOne.email);   //roboflowsystem.com
+// console.log(userTwo.email);   //roboflowsystem.com
+
+// -------------------------------------------------------------------------------------------------------------------
+// LECTURE 11
