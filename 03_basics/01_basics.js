@@ -65,11 +65,77 @@
 
 
 // We can assign a default value. Now it will never be undefined even if the user do not assign any value. And if he assign a value then it will overwrite it.
-function loginUserMessage(username = "sam"){
-    if(username === undefined){               //Now we will never go into this block as the value never be 'undefined' 
-        console.log("Please enter a username")
-        return
-    }
-    return `${username} just logged in`
+// function loginUserMessage(username = "sam"){
+//     if(username === undefined){               //Now we will never go into this block as the value never be 'undefined' 
+//         console.log("Please enter a username")
+//         return
+//     }
+//     return `${username} just logged in`
+// }
+// console.log(loginUserMessage());   //sam just logged in
+
+
+
+// Lecture - 20
+// for an example, in a shopping app, we don't know how many products will a user is going to add to his addcart So we have to define the parameter accordingly which is not possible in normal way
+// function calculateCartPrice(num1){
+//     return num1
+// }
+// console.log(calculateCartPrice(200, 400, 500)); //200   
+//this will return the only first value so for this issue we can use 'Rest Operator'
+
+// function calculateCartPrice(...num1){
+//     return num1
+// }
+// console.log(calculateCartPrice(200, 400, 500));         //[200, 400, 500]
+
+
+
+// function calculateCartPrice(val1, val2, ...num1){
+//     return num1
+// }
+// console.log(calculateCartPrice(200, 400, 500, 3000));    //[500, 3000]
+
+
+
+// Object in function
+// const user = {
+//     username: "Yash",
+//     price: 999
+// }
+// function handleObject(anyobject){
+//     console.log(`Username is ${anyobject.username} anf price is ${anyobject.price}`)
+// }
+// handleObject(user)           //Username is Yash anf price is 999
+
+
+
+
+// const user = {
+//     username: "Yash",
+//     price: 999
+// }
+// function handleObject(anyobject){
+//     console.log(`Username is ${anyobject.username} anf price is ${anyobject.price}`)
+// }
+// handleObject({
+//     username: "Aryan",
+//     price: 988
+// })
+
+
+// // Array in function
+// const newArray = [200, 400, 100, 600]
+// function returnSecondValue(getArray){      //'getArray', is just a name. We can define it anything we want
+//     return getArray[1]
+
+// }
+// console.log(returnSecondValue(newArray));          //400
+
+
+const newArray = [200, 400, 100, 600]
+function returnSecondValue(getArray){
+    return getArray[1]
+
 }
-console.log(loginUserMessage());   //sam just logged in
+console.log(returnSecondValue([200, 600, 700, 500]));   //600
