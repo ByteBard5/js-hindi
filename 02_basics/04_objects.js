@@ -31,10 +31,10 @@
 
 
 
-// merging
-const obj1 = {1: "a", 2:"b"}
-const obj2 = {3: "a", 4:"b"}
-// const obj3 = {obj1, obj2}
+// // merging
+// const obj1 = {1: "a", 2:"b"}
+// const obj2 = {3: "a", 4:"b"}
+// // const obj3 = {obj1, obj2}
 // console.log(obj3);     //{ obj1: { '1': 'a', '2': 'b' }, obj2: { '3': 'a', '4': 'b' } }  //not a right method
 
 // const obj3 = Object.assign(obj1, obj2)
@@ -64,16 +64,31 @@ const obj2 = {3: "a", 4:"b"}
 
 
 
-const newObj = {
-    name: "Aryan", 
-    age: 19,
-    id: "79Dy"
-}
-console.log(newObj);               //{ name: 'Aryan', age: 19, id: '79Dy' }
-console.log(Object.keys(newObj));               //[ 'name', 'age', 'id' ]    (convert the keys in the array, now we can use them in many ways as array)
-console.log(Object.values(newObj));         //[ 'Aryan', 19, '79Dy' ]
-console.log(Object.entries(newObj));          //[ [ 'name', 'Aryan' ], [ 'age', 19 ], [ 'id', '79Dy' ] ]   //we will not use it as much
+// const newObj = {
+//     name: "Aryan", 
+//     age: 19,
+//     id: "79Dy"
+// }
+// console.log(newObj);               //{ name: 'Aryan', age: 19, id: '79Dy' }
+// console.log(Object.keys(newObj));               //[ 'name', 'age', 'id' ]    (convert the keys in the array, now we can use them in many ways as array)
+// console.log(Object.values(newObj));         //[ 'Aryan', 19, '79Dy' ]
+// console.log(Object.entries(newObj));          //[ [ 'name', 'Aryan' ], [ 'age', 19 ], [ 'id', '79Dy' ] ]   //we will not use it as much
 
-// for checking if it has the property or not
-console.log(newObj.hasOwnProperty('isLoggedIn'));           //false
+// // for checking if it has the property or not
+// console.log(newObj.hasOwnProperty('isLoggedIn'));           //false
+
+
+// DE-STRUCTURING OF OBJECTS   //LECTURE - 18
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseInstructor: "hitesh"
+}
+// It is just a syntax. We can use it if we want, Basically if we want to call courseInstructure then we have to write [console.log(course.courseInstructure)], it is too long to use it again and again so for making it short we can use this syntax-
+const {courseInstructor} = course
+console.log(courseInstructor);
+
+// We can make it more short by giving it a name by yourself
+const {courseInstructor: ram} = course
+console.log(ram);
 
