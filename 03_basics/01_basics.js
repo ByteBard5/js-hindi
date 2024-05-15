@@ -99,14 +99,14 @@
 
 
 // Object in function
-// const user = {
-//     username: "Yash",
-//     price: 999
-// }
-// function handleObject(anyobject){
-//     console.log(`Username is ${anyobject.username} anf price is ${anyobject.price}`)
-// }
-// handleObject(user)           //Username is Yash anf price is 999
+const user = {
+    username: "Yash",
+    price: 999
+}
+function handleObject(anyobject){
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`)
+}
+handleObject(user)           //Username is Yash and price is 999
 
 
 
@@ -116,7 +116,7 @@
 //     price: 999
 // }
 // function handleObject(anyobject){
-//     console.log(`Username is ${anyobject.username} anf price is ${anyobject.price}`)
+//     console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`)
 // }
 // handleObject({
 //     username: "Aryan",
@@ -133,9 +133,9 @@
 // console.log(returnSecondValue(newArray));          //400
 
 
-const newArray = [200, 400, 100, 600]
-function returnSecondValue(getArray){
-    return getArray[1]
+// const newArray = [200, 400, 100, 600]
+// function returnSecondValue(getArray){
+//     return getArray[1]
 
-}
-console.log(returnSecondValue([200, 600, 700, 500]));   //600
+// }
+// console.log(returnSecondValue([200, 600, 700, 500]));   //600
