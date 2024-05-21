@@ -59,10 +59,10 @@
 //     if (username === "Yash") {
 //         const website = " www.roboflowsystem.com"
 //         console.log(username + website );
-//     }
-//     // console.log(website);    //error
+    // }
+    // console.log(website);    //error
 // }
-// // console.log(username);       //error
+// console.log(username);       //error
 
 
 
@@ -70,18 +70,18 @@
 
 // two types of defining functions
 // 1st
-// function addone(num) {
-//     return num + 1
-// }
-// console.log(addTwo(5))              //6
+function addone(num) {
+    return num + 1
+}
+console.log(addone(5))              //6
 
 
 // // 2nd type
-// const addTwo = function(num) {
-//     return num + 2
+const addTwo = function(num) {
+    return num + 2
 
-// }
-// console.log(addTwo(5))               //6
+}
+console.log(addTwo(5))               //7
 
 
 // Now change the function call in both the functions
@@ -92,7 +92,7 @@
 
 
 // 2nd type
-console.log(addTwo(5))          //error
-const addTwo = function(num) {
-    return num + 2
-}
+// console.log(addTwo(5))          //error
+// const addTwo = function(num) {
+//     return num + 2
+// }
